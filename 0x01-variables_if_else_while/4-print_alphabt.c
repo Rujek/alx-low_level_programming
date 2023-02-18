@@ -7,13 +7,13 @@
 
 int main(void)
 {
-	char ch = 'a'
+	char c = 'a';
 
-	while (ch <= 'z')
+	while (c <= 'z')
 	{
-	 if (ch != 'e' && ch != 'q')
+	 if (c != 'e' && ch != 'q')
 	{
-	 putchar(ch);
+	 putchar(c);
 	}
 	ch++;
 	}
