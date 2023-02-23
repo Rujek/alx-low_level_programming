@@ -1,0 +1,3 @@
+[submodule "root/alx-low_level_programming/0x03-debugging/alx-low_level_programming"]
+	path = root/alx-low_level_programming/0x03-debugging/alx-low_level_programming
+	url = https://github.com/Rujek/alx-low_level_programming.git
