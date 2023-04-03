@@ -1,5 +1,5 @@
 #include "lists.h"
-#include <stdio.>
+#include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 
@@ -12,12 +12,12 @@
 int sum_listint(listint_t *head)
 {
 	int sum = 0;
-	listint_t *temp = head
+	listint_t *temp = head;
 
 	while (temp)
 	{
 		sum += temp->n;
-		head = temp->next;
+		temp = temp->next;
 	}
 	return (sum);
 }
