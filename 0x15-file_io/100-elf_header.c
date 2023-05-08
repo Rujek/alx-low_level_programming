@@ -112,7 +112,7 @@ void print_data(unsigned char *e_ident)
  * print_version - prints the version of an ELF header
  * @e_ident: a pointer to an array containing the ELFversion
  */
-void_print_version(unsigned char *e_ident)
+void print_version(unsigned char *e_ident)
 {
 	printf(" Version:	%d", e_ident[EI_VERSION]);
 	switch (e_ident[EI_VERSION])
@@ -289,7 +289,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	print_version(header->e_ident);
 	print_osabi(header->e_ident);
 	print_abi(header->e_ident);
-	print_type(e_type, header->e_ident);
+	print_type(header->e_type, header->e_ident);
 	print_entry(header->e_entry, header->e_ident);
 
 	free(header);
